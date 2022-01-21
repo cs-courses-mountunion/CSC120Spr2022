@@ -36,18 +36,18 @@ table {color: #000000; background-color: #e9e8e2; font-family: Monospaced}
 14  <span class="comment">*/</span>
 15 <span class="literal">public</span> <span class="literal">class</span> <span class="ST1">LollipopTree</span> {
 16     
-17     <span class="literal">private</span> Integer <span class="ST2">over</span>, <span class="ST2">down</span>;
+17     <span class="literal">private</span> Integer <span class="ST2">anchorX</span>, <span class="ST2">anchorY</span>;
 18     
 19     <span class="literal">public</span> <span class="ST1">LollipopTree</span>(Integer x, Integer y) {
-20         <span class="ST2">over</span> = x;
-21         <span class="ST2">down</span> = y;
+20         <span class="ST2">anchorX</span> = x;
+21         <span class="ST2">anchorY</span> = y;
 22     } <span class="comment">// end of constructor</span>
 23     
 24     <span class="literal">public</span> <span class="literal">void</span> <span class="ST1">draw</span>(Graphics g) {
 25         g.setColor(<span class="literal">new</span> Color(102, 51, 0));
-26         g.fillRect(<span class="ST2">over</span>+60, <span class="ST2">down</span>+20, 30, 150);
+26         g.fillRect(<span class="ST2">anchorX</span>+60, <span class="ST2">anchorY</span>+20, 30, 150);
 27         g.setColor(Color.<span class="ST3">GREEN</span>);
-28         g.fillOval(<span class="ST2">over</span>, <span class="ST2">down</span>, 150, 80);
+28         g.fillOval(<span class="ST2">anchorX</span>, <span class="ST2">anchorY</span>, 150, 80);
 29     } <span class="comment">// end of draw method</span>
 30     
 31 } <span class="comment">// end of class LollipopTree</span>
