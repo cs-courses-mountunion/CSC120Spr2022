@@ -55,6 +55,12 @@ public class MUPanel extends JPanel  {
         System.out.println("Going to class I wear: " + blackShoes.toString() );
         System.out.println("For the beach I have: " + flipFlops.toString() );
 
+        // how many shirts do I have?
+        Integer numberOfShirts;
+        numberOfShirts = myFavoriteShirts.getQuantity() + otherShirts.getQuantity();
+        System.out.println();
+        System.out.println("I have " + numberOfShirts + " shirts overall");
+
         // how much did I spend on A & F tee shirts?
         Double totalSpent;
         totalSpent = otherShirts.getQuantity() * otherShirts.getPrice();
