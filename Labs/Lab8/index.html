@@ -77,7 +77,8 @@
               </li>
               <li> the RoundHead's hat should be RED. </li>
               <li> over should be a formula that computes 30 times the <b>loop control
-                variable</b>.</li>
+                variable</b>.&nbsp; The <b>loop control variable</b> is what is being initialized,
+				tested and changed inside the parentheses of the <em>for</em> loop.</li>
               <li> down should be should be a formula that computes 20 times the <b>loop control
                 variable</b>.</li>
               <li> the verticalStepSize should be 15.</li>
@@ -170,6 +171,19 @@ run
             file. <br />
             <br />
           </li>
+          <li>Also at the top of 
+            the <code>MUPanel</code> class in the <b>MUPanel.java</b>
+            file, include this object declaration and instantiation:
+<pre>
+    private Random randGenerator = new Random();
+</pre>
+              (Note: a
+              light bulb will appear beside this line; just click
+              on it and then
+              select the <font face="Arial">Add&nbsp;import&nbsp;for&nbsp;java.util.Random</font>
+              item from the
+              menu that pops up.<br /><br />
+          </li>
           <li>Instantiate the array of <code>Star</code> objects in the
             constructor method of the <code>MUPanel</code> class so
             that the
@@ -199,21 +213,12 @@ run
             variable <code>randNum</code>
             to a random integer in the range from 0 to <em><b>upper</b></em>:
 <b><pre>
-    Random randGenerator = new Random();
-
     randNum = randGenerator.nextInt(upper);
 </pre></b>
-            <p>Put the first of these two lines above&nbsp; the <code>for</code>
-              loop, and then you can put lines similar to the second
-              one&nbsp; inside
+            <p>Put lines similar to this one inside
               the <code>for</code> loop to
-              put random numbers into <code>x</code> and <code>y</code>.
-              (Note; a
-              light bulb will appear beside the first line; just click
-              on it and then
-              select the <font face="Arial">Add&nbsp;import&nbsp;for&nbsp;java.util.Random</font>
-              item from the
-              menu that pops up.</p>
+              store random numbers into <code>x</code> and <code>y</code>.
+            </p>
           </li>
           <li>
             <p>In the <code>paintComponent</code> method of the <b>MUPanel.java</b>
